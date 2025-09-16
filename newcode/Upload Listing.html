@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Listing - Germiston Ext9 Rental Rooms</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+   <div class="sidebar">
+  <img src="logo.png" alt="Germiston Ext9 Rental Rooms Logo" class="logo">
+  <nav>
+    <ul>
+      <li><a href="index.html" class="btn">Home</a></li>
+      <li><a href="Available rooms.html" class="btn">Available rooms</a></li>
+      <li><a href="contact Us.html" class="btn">Contact Us</a></li>
+    </ul>
+  </nav>
+</div>
+
+    <div class="main-content">
+      <h1>Upload Your Room Listing</h1>
+      <form id="listingForm">
+        <div class="form-group">
+          <label for="price">Rent Price (ZAR):</label>
+          <input type="number" id="price" name="price" required>
+        </div>
+        <div class="form-group">
+          <label for="location">Location (Ext 9, Germiston):</label>
+          <input type="text" id="location" name="location" required>
+        </div>
+        <div class="form-group">
+<label for="condition">Condition of Room:</label>
+          <textarea id="condition" name="condition" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="electricity">Electricity Status:</label>
+          <select id="electricity" name="electricity" required>
+            <option value="Metered">Metered</option>
+            <option value="Prepaid">Prepaid</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="photos">Photos of Room:</label>
+          <input type="file" id="photos" name="photos" multiple accept="image/*">
+        </div>
+        <button type="submit" class="btn btn-primary">Upload Listing</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="upload.js"></script>
+</body>
+</html>
+
